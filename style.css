@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+#login-container{
+  width: 100%;
+  height: 100%; 
+}
+
+#login-container p{
+  text-align: center;
+  margin-top: 30px;
+  
+  
+}
+
+#login-container img{
+  width: 170px;
+  height: auto;
+  margin-bottom: 15px;
+  position: absolute;
+  top: 30px;  /* Adjust the value to position the image above the container */
+  left: 50%;  /* Center the image horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  z-index: 2; 
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+  margin-top: 10%;
+  margin-left: 36%;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19);
+}
+
+form h3{
+  font-size: 18px;
+  font-weight: 300;
+}
+
+form input{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+a.loginbtn {
+  background-color: #1877f2;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: 'Arial';
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+a.loginbtn:hover{
+  background-color: #4257b2;
+}
+
+a.forget-password{
+  margin: 15px 0;
+  text-decoration: none;
+  color: #1877f2;
+  font-family: 'Arial';
+  font-size: 15px;
+}
+
+#sign-up{
+  padding-top: 20px;
+  border-top: 1px solid #999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#sign-up a{
+  background-color: #3caa26;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-family: 'Arial';
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+#sign-up a:hover{
+  background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
